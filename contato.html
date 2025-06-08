@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">☔ | Umbrella Sampa</div>
+      <ul class="nav-menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="solucao.html">Solução</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="content">
+      <h1>Entre em contato</h1>
+      <form id="formContato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+        <div class="error" id="erroNome"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required />
+        <div class="error" id="erroEmail"></div>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui" required></textarea>
+        <div class="error" id="erroMensagem"></div>
+
+        <button type="submit">Enviar</button>
+        <p class="success" id="mensagemSucesso"></p>
+      </form>
+      <div class="download">
+        <button onclick="baixarContatos()">📥 Baixar contatos (.csv)</button>
+      </div>
+    </section>
+
+    <section class="filter">
+      <input type="text" id="filtroTicket" placeholder="🔍 Buscar ticket por ID, nome ou email...">
+    </section>
+
+    <section class="tickets-list">
+      <h2>Tickets Recebidos</h2>
+      <div id="listaTickets"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 ☔ | Umbrella Sampa</p>
+  </footer>
+</body>
+</html>
