@@ -3,6 +3,7 @@ Projeto Umbrella Sampa – ZyperX
 Objetivo do Projeto:
 Criar uma solução digital que auxilie pessoas durante enchentes e alagamentos, fornecendo informações em tempo real, rotas seguras, localização de abrigos e suporte por assistente virtual.
 
+
 Estrutura do Projeto:
 /FRONT_END_GS
 ─ index.html

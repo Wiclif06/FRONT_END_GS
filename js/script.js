@@ -8,6 +8,7 @@ function atualizarListaTickets() {
   const filtro = document.getElementById("filtroTicket")?.value.toLowerCase() || "";
   let contatos = [];
 
+  
   try {
     contatos = JSON.parse(localStorage.getItem("contatos_ticket") || "[]");
   } catch (e) {

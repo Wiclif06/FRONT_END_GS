@@ -1,11 +1,19 @@
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
 .navbar { background-color: #222; color: #fff; padding: 1em; display: flex; justify-content: space-between; align-items: center; }
+
 .nav-menu { list-style: none; display: flex; gap: 1em; }
+
 .nav-menu a { color: white; text-decoration: none; }
+
 .hero { background: #0e0e0e; color: white; padding: 2em; text-align: center; }
+
 .content { padding: 2em; }
+
 .card { background: #f0f0f0; padding: 1em; border-radius: 8px; max-width: 300px; }
+
 .hidden { display: none; }
+
 @media (max-width: 600px) { .nav-menu { flex-direction: column; } }
 
 .card-container {
